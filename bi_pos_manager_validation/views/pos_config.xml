@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<odoo>
+
+	 <record id="res_users_view_form" model="ir.ui.view">
+		<field name="name">res.users.form.view</field>
+		<field name="model">res.users</field>
+		<field name="inherit_id" ref="base.view_users_form" />
+		<field name="arch" type="xml">
+			<notebook position="inside">
+				<page string="Limitaciones por contraseña">
+					<group>
+						<field name="pos_security_pin" />
+					</group>
+				</page>
+			</notebook>
+		</field>
+	</record>
+
+
+	<record id="inherit_view_pos_config_internal_transfer" model="ir.ui.view">
+		<field name="name">inherit_view_pos_config_internal_transfer</field>
+		<field name="model">pos.config</field>
+		<field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//h2[@name='order']" position="before">
+			<h2 name="order">Aprobacion de supervisor</h2>
+			<div class="row mt16 o_settings_container">
+				<div class="col-xs-12 col-md-6 o_setting_box">
+					<div class="o_setting_left_pane">
+						
+					</div>
+					<div class="o_setting_right_pane">
+						<label for="user_id" string="Managers"/>
+						<div class="text-muted">
+							Quien es supervisor de esta CAJA.
+						</div>
+						<field name="user_id"/>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 o_setting_box">
+					<div class="o_setting_left_pane">
+						<field name="one_time_valid"/>
+					</div>
+					<div class="o_setting_right_pane">
+						<label for="one_time_valid"/>
+						<div class="text-muted">
+							Este PIN serviria una sola vez (Por si no esta el gerente puede darlo y solo funciona una vez)	
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 o_setting_box">
+					<div class="o_setting_left_pane">
+						<field name="close_pos"/>
+					</div>
+					<div class="o_setting_right_pane">
+						<label for="close_pos"/>
+						<div class="text-muted">
+							Bloquea el cierre de sesion.
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 o_setting_box">
+					<div class="o_setting_left_pane">
+						<field name="order_delete"/>
+					</div>
+					<div class="o_setting_right_pane">
+						<label for="order_delete"/>
+						<div class="text-muted">
+							Solicita autorizacion para eliminar una orden.
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 o_setting_box">
+					<div class="o_setting_left_pane">
+						<field name="order_line_delete"/>
+					</div>
+					<div class="o_setting_right_pane">
+						<label for="order_line_delete"/>
+						<div class="text-muted">
+							Solicita autorizacion para eliminar una partida.
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 o_setting_box">
+					<div class="o_setting_left_pane">
+						<field name="qty_detail"/>
+					</div>
+					<div class="o_setting_right_pane">
+						<label for="qty_detail"/>
+						<div class="text-muted">
+							Solicita autorizacion para cambiar cantidad.
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 o_setting_box">
+					<div class="o_setting_left_pane">
+						<field name="discount_app"/>
+					</div>
+					<div class="o_setting_right_pane">
+						<label for="discount_app"/>
+						<div class="text-muted">
+							Solicita autorizacion para otorgar descuento.
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 o_setting_box">
+					<div class="o_setting_left_pane">
+						<field name="payment_perm"/>
+					</div>
+					<div class="o_setting_right_pane">
+						<label for="payment_perm"/>
+						<div class="text-muted">
+							Solicita autorizacion para realizar el pago y terminar la operacion.
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 o_setting_box">
+					<div class="o_setting_left_pane">
+						<field name="price_change"/>
+					</div>
+					<div class="o_setting_right_pane">
+						<label for="price_change"/>
+						<div class="text-muted">
+							Solicita autorizacion para cambiar precios.
+						</div>
+					</div>
+				</div>
+			</div>  
+			</xpath>
+		</field>
+	</record>
+</odoo>
