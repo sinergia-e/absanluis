@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+    <t 
+        t-inherit="point_of_sale.ProductInfoPopup" 
+        t-inherit-mode="extension"
+        >
+
+        <xpath expr="//div[@class='section-order']" position="replace">
+            <div class="pos-product-magnify">
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@class='section-financials']/div[@class='section-financials-body']" position="replace">
+                <div class="section-financials-body">
+                    <table>
+                        <t t-foreach="productInfo.pricelists" t-as="pricelist" t-key="pricelist.name">
+                            <tr>
+                                <td t-esc="pricelist.name"/>
+                                <td t-esc="env.pos.format_currency(pricelist.price)"/>
+                            </tr>
+                        </t>
+                    </table>
+                </div>
+        </xpath>
+
+    </t>
+
+</templates>
