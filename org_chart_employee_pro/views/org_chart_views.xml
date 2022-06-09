@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <record id="chart_employee_form" model="ir.ui.view">
+    <field name="name">Empleados</field>
+    <field name="model">hr.employee</field>
+    <field name="inherit_id" ref="hr.view_employee_form"/>
+    <field name="mode">primary</field>
+    <field name="priority">10000</field>
+    <field name="arch" type="xml">
+      <xpath expr="//form" position="inside">
+        <footer>
+          <button string="Guardar" type="object" name="action_to_save" class="oe_highlight"/>
+          <button special="cancel" string="Cerrar" type="object" />
+	      </footer>
+      </xpath>
+    </field>
+  </record>
+
+  <record id="slife_employee_wizard" model="ir.ui.view">
+    <field name="name">slife.employee.form</field>
+    <field name="model">slife.employee</field>
+    <field name="arch" type="xml">
+      <form>
+        <h4 attrs="{'invisible': [('childs_number','!=',1)]}" style="text-align: center;"><field name="parent_id"/> has <field name="childs_number" style="color:red;"/> direct subordinate. Please Fill the new Line Manager of this Employee.</h4>
+        <h4 attrs="{'invisible': [('childs_number','=',1)]}" style="text-align: center;"><field name="parent_id"/> has <field name="childs_number" style="color:red;"/> direct subordinates. Please Fill the new Line Manager of these Employees.</h4>
+        <table style="width: 100%;text-align: center;">
+          <tr>
+            <td>
+              <div class="oe_title">
+                <field name="parent_image" widget='image' class="oe_right oe_manager" nolabel="1"/><br/>
+                <field name="parent_id" string="Supervisor" class="oe_right" style="margin: 10px;" options="{'no_open': true, 'no_create_edit': true}"/>
+              </div>
+            </td>
+            <td style="width: 5px;">
+              <img src="/org_chart_employee_pro/static/src/img/to.gif" style="max-height: 30px;margin: 40px;"/>
+            </td>
+            <td>
+              <div class="oe_title">
+                <field name="new_parent_image" widget='image' class="oe_left oe_manager" nolabel="1"/>
+                <field name="new_parent_id" string="Supervisor" style="margin: 10px;width: 50%;" options="{'no_open': true, 'no_create_edit': true}"
+                  placeholder="New Parent of subordinate"/>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <footer>
+          <button string="Cambiar Jerarquia" name="action_to_save_parent" type="object" class="oe_highlight" context="{'save': 'yes'}"/>
+          <button string="Mantener Jerarquia" name="action_to_save_parent" type="object" class="oe_highlight"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+
+  <record id="action_org_chart_employee" model="ir.actions.client">
+      <field name="name">Grafico de Empleados</field>
+      <field name="tag">org_chart_employee_pro.org_chart_employee</field>
+  </record>
+
+  <menuitem id="menu_org_chart_pro_employee"
+    name="San Luis"
+    action="action_org_chart_employee"
+    web_icon="org_chart_employee_pro,static/src/img/icon.png"
+    groups="hr.group_hr_user"/>
+
+    <!-- <template id="assets_backend" name="Org Chart Employee assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+          <script src="/org_chart_employee_pro/static/js/org_chart_employee.js"></script>
+          <script src="/org_chart_employee_pro/static/js/jquery_orgchart.js"></script>
+          <script src="/org_chart_employee_pro/static/js/other.js"></script>
+          <script src="/org_chart_employee_pro/static/js/jspdf_min.js"></script>
+          <script src="/org_chart_employee_pro/static/js/html2canvas_min.js"></script>
+          <link href="/org_chart_employee_pro/static/src/css/jquery_orgchart.css" rel="stylesheet" />
+          <link href="/org_chart_employee_pro/static/src/css/style.css" rel="stylesheet" />
+      </xpath>
+    </template> -->
+</odoo>

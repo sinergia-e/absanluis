@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+  <t t-name="org_chart_employee_pro.org_chart_template">
+    <div id="org-chart-main">
+      <div style="width:100%;padding: 10px;display: inline-block;z-index: 100;">
+        <button style="float:left;border-radius: 0px;" id="btn-reload" class="btn btn-primary"><i class="fa fa-refresh" aria-hidden="true"/>Recargar</button>
+        <input type="text" id="key-word" class="o_input" style="width:200px;height: 32px;float: left;border-radius: 0px;" placeholder="A quien buscas?"/>
+        <button style="border-radius: 0px;" id="btn-export" class="btn btn-primary"><i class="fa fa-camera" aria-hidden="true"></i>Exportar</button>
+      </div>
+      <div id="chart-container"></div>
+    </div>
+    <script type="text/javascript">
+      $(function() {
+        var datascource = employee_data.values;
+
+        var oc = get_organization_chart(datascource);
+
+        oc.$chart.on('nodedrop.orgchart', function(event, extraParams) {
+          var data = {
+            "child": extraParams.draggedNode.children('.org_chart_id').text(),
+          	"last_parent": extraParams.dragZone.children('.org_chart_id').text(),
+          	"new_parent": extraParams.dropZone.children('.org_chart_id').text()
+          };
+          parent_id = extraParams.draggedNode.children('.org_chart_id').text();
+          $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "/orgchart/update",
+            data: data,
+          });
+        });
+
+        chart_object = oc;
+
+        $('#key-word').keyup(function() {
+          if (this.value.length === 0) {
+            clearFilterResult();
+          }else {
+            filterNodes(this.value.toLowerCase());
+          }
+        });
+
+      });
+    </script>
+  </t>
+</templates>
