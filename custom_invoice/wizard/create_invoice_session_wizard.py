@@ -6,8 +6,8 @@ class CerateInvoiceSessionWizard(models.TransientModel):
 
     _name = 'create.invoice.session.wizard'
     
-    invoice_format = fields.Selection(selection=[('detailed', 'Detallada'), ('one', 'Una partida'), ('cfdi', 'CFDI'), ('compacta','Compacta')], 
-                                      string='Facturar en forma', required=True, default='detailed')
+#    invoice_format = fields.Selection(selection=[('detailed', 'Detallada'), ('one', 'Una partida'), ('cfdi', 'CFDI'), ('compacta','Compacta')], string='Facturar en forma', required=True, default='detailed')
+    invoice_format = fields.Selection(selection=[('detailed', 'Detallada'), ('compacta','Compacta')], string='Facturar en forma', required=True, default='detailed')
     partner_id = fields.Many2one('res.partner', string=_('Cliente'))
     product_id = fields.Many2one('product.product', string=_('Artículo general'))
     order_num = fields.Integer(string=_('No. de pedidos'), readonly=True)
