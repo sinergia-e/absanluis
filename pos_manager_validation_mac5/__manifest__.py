@@ -1,6 +1,5 @@
 {
     
-
     'name': 'Validacion de supervisor POS',
     'version': '15.0.1.2',
     'summary': """Validacion""",
