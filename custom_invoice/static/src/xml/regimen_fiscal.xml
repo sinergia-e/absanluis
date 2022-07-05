@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="ClientDetailsEdit" t-inherit="point_of_sale.ClientDetailsEdit" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('client-details-left')]" position="inside">
+            <div class="client-detail">
+                <span class="label">Regimen fiscal</span>
+                <select class="detail client-regimen-fiscal needsclick" name="regimen_fiscal_id"
+                        t-on-change="captureChange">
+                    <option value="">None</option>
+                    <t t-foreach="env.pos.regimen_fiscal" t-as="rec">
+                        <option t-att-value="rec['id']"
+                                t-att-selected="props.partner.regimen_fiscal_id ? ((rec.id === props.partner.regimen_fiscal_id[0]) ? true : undefined) : undefined">
+                            <t t-esc="rec['description']"/>
+                        </option>
+                    </t>
+                </select>
+            </div>
+        </xpath>
+    </t>
+</templates>
+
+
+
