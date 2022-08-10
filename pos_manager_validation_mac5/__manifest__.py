@@ -6,7 +6,6 @@
     'description': """
     
 
-
 """,
     'category': 'Point of Sale',
     'author': 'MAC5',
