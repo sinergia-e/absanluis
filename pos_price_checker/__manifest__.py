@@ -27,9 +27,6 @@ Permite usar POS como verificador.
             'pos_price_checker/static/src/xml/**/*',
         ],
     },
-    'images': [
-        'static/description/sele.jpg',
-    ],
     'installable': True,
     'website': '',
     'auto_install': False,
