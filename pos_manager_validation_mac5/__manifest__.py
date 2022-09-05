@@ -4,7 +4,6 @@
     'version': '15.0.1.2',
     'summary': """Validacion""",
     'description': """
-    
 
 """,
     'category': 'Point of Sale',
