@@ -5,6 +5,7 @@
 ##############################################################################
 
 {
+	
     'name': 'Punto de Venta Factura Electronica Mexico CFDI',
     'version': '15.02',
     'description': ''' Punto de Venta Factura Electronica Mexico (CFDI 4.0).
