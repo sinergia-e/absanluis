@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id='sales_price_update_report_wizard_form' model='ir.ui.view'>
+            <field name='name'>sales.price.update.report.form</field>
+            <field name='model'>date.select.wizard</field>
+            <field name='arch' type='xml'>
+                <form string='Intervalo del reporte'>
+                    <group>
+                        <group>
+                            <label for="from_date" string="Fechas"/>
+                            <div class="o_row">
+                                <field name="from_date" widget="daterange" options="{'related_end_date': 'to_date'}"/>
+                                <span> al </span>
+                                <field name="to_date" widget="daterange"
+                                       options="{'related_start_date': 'from_date'}"/>
+                            </div>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="print_report" string="Reporte" class="btn-primary" type="object" icon="fa-print"/>
+                        <!-- <button name="send_report" string=" Send by Email" class="btn-primary" type="object" icon="fa-envelope"/> -->
+                        <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

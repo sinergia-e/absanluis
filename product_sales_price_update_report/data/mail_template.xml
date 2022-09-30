@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data>
+        <record id="email_template_sales_price_update_report" model="mail.template">
+            <field name="name">Sales Price Update Details: Send by email</field>
+            <field name="model_id" ref="model_date_select_wizard"/>
+            <field name="email_from">xyz</field>
+            <field name="email_to">abc</field>
+            <field name="subject">Product Sales Price Update Details</field>
+            <!--            <field name="report_template" ref="product_sales_price_update_report.sales_price_update_report_action"/>-->
+            <!--            <field name="report_name">ABC</field>-->
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Dear
+                        <br/>
+                        <br/>
+                        Here are the Sales Price Update Details :
+                        <br/>
+                        <br/>
+                        <t t-set="updated_prices" t-value="object.get_details()"/>
+
+                        <table t-if="updated_prices" class="table" border="1px" style="width: 50%%">
+                            <thead>
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Old Sales Price</th>
+                                    <th>Updated Sales Price</th>
+                                    <th>Updated on</th>
+                                    <th>Updated by</th>
+                                </tr>
+                            </thead>
+                            <t t-foreach="" t-as="line">
+                            <tr>
+                                <td><t t-esc="line['product_name']"/></td>
+                                <td><t t-esc="line['old_sale_price']"/></td>
+                                <td><t t-esc="line['new_sale_price']"/></td>
+                                <td><t t-esc="line['price_updated_on']"/></td>
+                                <td><t t-esc="line['price_updated_by']"/></td>
+                            </tr>
+                            </t>
+                        </table>
+                        <t t-else="">
+                            <span>Do not have any price update.</span>
+                        </t>
+                        <br/>
+                        Don't hesitate to contact us if you have any question.
+                    </p>
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>

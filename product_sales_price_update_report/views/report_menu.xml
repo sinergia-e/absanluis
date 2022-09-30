@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id='sales_price_update_report_action_id' model='ir.actions.act_window'>
+            <field name='name'>Reporte Cambios de Precio ABSL</field>
+            <field name='res_model'>date.select.wizard</field>
+            <field name='view_mode'>form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id='create_product_sales_price_update_report' name='Reporte Cambios de Precio ABSL' parent='account.menu_finance_reports'
+                  action='product_sales_price_update_report.sales_price_update_report_action_id'/>
+    </data>
+</odoo>
