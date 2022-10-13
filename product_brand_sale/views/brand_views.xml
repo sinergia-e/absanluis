@@ -77,10 +77,30 @@
             </field>
         </record>
 
+        
+        
          <menuitem id="brand_product_sale"
                    name="Proveedor ABSL"
                    parent="sale.product_menu_catalog"
                    sequence="3"
                    action="product_brand_action"/>
+        
+        
+      
+        <!-- Codigo Adicional para Brand Stock -->
+         <menuitem id="product_brand_inventory"
+                  name="Proveedor ABSL"
+                  action="product_brand_action"
+                  parent="stock.menu_stock_inventory_control"
+                  sequence="2"/>
+        
+                
+                
+        
+        
+        
+        
+        
+        
     </data>
 </odoo>
