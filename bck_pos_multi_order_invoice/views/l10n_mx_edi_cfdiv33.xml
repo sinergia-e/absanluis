@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="global_invoice_identification_number_cfdiv33" inherit_id="l10n_mx_edi.cfdiv33">
+        <xpath expr="(//*[local-name()='Concepto'])" position="attributes" t-if="line.l10n_mx_edi_identification_number">
+            <attribute name="t-att-NoIdentificacion">line.l10n_mx_edi_identification_number</attribute>
+            <attribute name="t-att-Unidad"/>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,30 @@
+Aqui encontre el tema del xml de la factura global
+http://omawww.sat.gob.mx/tramitesyservicios/Paginas/documentos/GuiaAnexo20Global.pdf
+a partir de la pag. 13
+
+
+Contpat tiene esto:
+https://conocimiento.blob.core.windows.net/conocimiento/2017/Comerciales/CambiosFiscales/Factura/facturas_globales_de_notas_de_venta.html#
+
+
+Atributos de nodo "cfdi:Concepto"
+
+Rfc= XAXX010101000
+UsoCFDI="P01" (Por definir).
+
+NoIdentificacion="#ticket"
+Cantidad=1
+ClaveProdServ="01010101" "No existe en el catálogo" siempre
+ClaveUnidad="ACT" siempre
+Unidad=Este campo no debe existir
+Descripcion="Venta" siempre
+ValorUnitario=subtotal  del  comprobante
+En  este  campo  se  debe  registrar  el  subtotal  del  comprobante 
+de operaciones con el público en general, el cual puede 
+contener de cero hasta seis decimales. 
+Si el tipo de comprobante es de “I” (Ingreso), este valor 
+debe ser mayor a cero.
+
+Agrupado por impuestos
+
+En este campo se debe registrar el número de folio o de operación de los comprobantes de operación con el público en general.

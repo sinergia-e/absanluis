@@ -1,0 +1,512 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bck_pos_multi_order_invoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-14 19:38+0000\n"
+"PO-Revision-Date: 2022-04-14 19:38+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__g01
+msgid "Acquisition of merchandise"
+msgstr "Adquisición de mercancías"
+
+#. module: bck_pos_multi_order_invoice
+#: model:product.product,uom_name:bck_pos_multi_order_invoice.product_product_sell
+#: model:product.template,uom_name:bck_pos_multi_order_invoice.product_product_sell_product_template
+#: model:uom.uom,name:bck_pos_multi_order_invoice.product_uom_activity
+msgid "Activity"
+msgstr "Actividad"
+
+#. module: bck_pos_multi_order_invoice
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.wizard_mass_invoice_pos_order
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bck_pos_multi_order_invoice
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.wizard_mass_invoice_pos_order
+msgid "Cashier"
+msgstr "Cajero"
+
+#. module: bck_pos_multi_order_invoice
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.cnd_pos_order_multi_invoce_filter_view
+msgid "Closed Session"
+msgstr "Sesión Cerrada"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model,name:bck_pos_multi_order_invoice.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__i04
+msgid "Computer equipment and accessories"
+msgstr "Equipo de cómputo y accesorios"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model,name:bck_pos_multi_order_invoice.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__i01
+msgid "Constructions"
+msgstr "Construcciones"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model,name:bck_pos_multi_order_invoice.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: bck_pos_multi_order_invoice
+#: model:res.groups,name:bck_pos_multi_order_invoice.group_pos_global_invoice
+msgid "Create Global invoices in POS"
+msgstr "Crear Facturas Globales en PdV"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.actions.server,name:bck_pos_multi_order_invoice.action_server_invoice_from_multi_pos
+msgid "Create Multi Order Invoice"
+msgstr "Crear Factura Global"
+
+#. module: bck_pos_multi_order_invoice
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.wizard_mass_invoice_pos_order
+msgid "Create and view invoice"
+msgstr "Crear y ver factura"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_res_company__create_out_refund_as_payment
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_res_config_settings__create_out_refund_as_payment
+msgid "Create credit note as payment"
+msgstr "Crear nota de crédito como pago"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__customer_id
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__d09
+msgid "Deposits in savings accounts, premiums based on pension plans."
+msgstr ""
+"Depósitos en cuentas para el ahorro, primas que tengan como base planes de "
+"pensiones."
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__i05
+msgid "Dices, dies, molds, matrices and tooling"
+msgstr "Dados, troqueles, moldes, matrices y herramental"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__d04
+msgid "Donations"
+msgstr "Donativos"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model,name:bck_pos_multi_order_invoice.model_account_edi_format
+msgid "EDI format"
+msgstr "Formato EDI"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__d03
+msgid "Funeral expenses"
+msgstr "Gastos funerales"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__g03
+msgid "General expenses"
+msgstr "Gastos en general"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__id
+msgid "ID"
+msgstr "Identificación"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_account_move_line__l10n_mx_edi_identification_number
+msgid "Identification #"
+msgstr "No. Identificación"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_res_config_settings__pos_invoice_type
+msgid ""
+"If marked, restrict Sale Order confirmation if the customer has exeeded the "
+"credit limit."
+msgstr ""
+"Si está marcado, se restringe la confirmación de la orden de venta si el "
+"cliente ha excedido el límite de crédito."
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_res_company__create_out_refund_as_payment
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_res_config_settings__create_out_refund_as_payment
+msgid ""
+"If marked, the multi pos order invoice will be paid with a new credit note."
+msgstr ""
+"Si se marca, la factura global de PdV se pagará con una nueva nota de "
+"crédito."
+
+#. module: bck_pos_multi_order_invoice
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.res_pos_invoice_types
+msgid ""
+"If market, the multi pos order invoice will be paid with a new Credit Note"
+msgstr ""
+"Si se marca, la factura global de PdV se pagará con una nueva nota de "
+"crédito."
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_account_bank_statement_line__l10n_mx_edi_payment_sign_required
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_account_move__l10n_mx_edi_payment_sign_required
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_account_payment__l10n_mx_edi_payment_sign_required
+msgid ""
+"If this field is active, the CFDI payment will be generated for this invoice"
+" payments."
+msgstr ""
+"Si este campo está activo, se generará el pago de CFDI para los pagos de "
+"esta factura."
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_account_bank_statement_line__l10n_mx_edi_sign_required
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_account_move__l10n_mx_edi_sign_required
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_account_payment__l10n_mx_edi_sign_required
+msgid "If this field is active, the CFDI will be generated for this invoice."
+msgstr "Si este campo está activo, se generará el CFDI para esta factura."
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_res_partner__l10n_mx_edi_sign_required
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_res_users__l10n_mx_edi_sign_required
+msgid ""
+"If this field is active, the invoices for this customer by default will be "
+"signed."
+msgstr ""
+"Si este campo está activo, se firmarán las facturas para este cliente de "
+"forma predeterminada."
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_account_move_line__l10n_mx_edi_identification_number
+msgid ""
+"In this field, the folio or transaction number of the transaction vouchers "
+"with the general public must be recorded."
+msgstr ""
+"En este campo se debe registrar el número de folio o de operación de los "
+"comprobantes de operación con el público en general."
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_product_product__pos_global_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_product_template__pos_global_invoice
+msgid "Include in POS Global Invoice"
+msgstr "Incluir en la factura global de PdV"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_pos_payment_method__l10n_mx_edi_payment_method_id
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_wizard_mass_invoice__l10n_mx_edi_payment_method_id
+msgid ""
+"Indicates the way the invoice was/will be paid, where the options could be: "
+"Cash, Nominal Check, Credit Card, etc. Leave empty if unkown and the XML "
+"will show \"Unidentified\"."
+msgstr ""
+"Indica la forma en que se pagó o se pagará la factura, donde las opciones "
+"podrían ser: Efectivo, Cheque nominal, Tarjeta de crédito, etc. Déjelo en "
+"blanco si no lo conoce y el XML mostrará \"No identificado\"."
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_res_company__pos_invoice_type
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_res_config_settings__pos_invoice_type
+msgid "Invoice Type"
+msgstr "Tipo de Factura"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model,name:bck_pos_multi_order_invoice.model_account_invoice_report
+msgid "Invoices Statistics"
+msgstr "Estadísticas de facturas"
+
+#. module: bck_pos_multi_order_invoice
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.cnd_pos_order_multi_invoce_account_move_filter_view
+msgid "Is Multi POS Order Invoice"
+msgstr "Es Factura Global de PdV"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_account_bank_statement_line__is_multi_pos_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_account_invoice_report__is_multi_pos_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_account_move__is_multi_pos_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_account_payment__is_multi_pos_order_invoice
+msgid "Is Multi Pos Order Invoice"
+msgstr "Es Factura Glbal de PdV"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__l10n_mx_edi_is_global_invoice
+msgid "Is global invoice?"
+msgstr "¿Es Factura Global?"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__journal_id
+msgid "Journal"
+msgstr "Diario"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model,name:bck_pos_multi_order_invoice.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento de diario"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model,name:bck_pos_multi_order_invoice.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte de diario"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: bck_pos_multi_order_invoice
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.cnd_pos_order_multi_invoce_filter_view
+msgid "Last Week"
+msgstr "Última Semana"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_pos_order__main_payment_method_id
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.cnd_pos_order_multi_invoce_filter_view
+msgid "Main Payment Method"
+msgstr "Método de pago principal"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__d08
+msgid "Mandatory School Transportation Expenses"
+msgstr "Gastos de transportación escolar obligatoria."
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__res_company__pos_invoice_type__mass
+msgid "Mass"
+msgstr "Masiva"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model,name:bck_pos_multi_order_invoice.model_wizard_mass_invoice
+msgid "Mass Invoice Wizard"
+msgstr "Asistente de Factura Global"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__d02
+msgid "Medical expenses for disability"
+msgstr "Gastos médicos por incapacidad o discapacidad"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__d07
+msgid "Medical insurance premiums"
+msgstr "Primas por seguros de gastos médicos"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__d01
+msgid "Medical, dental and hospital expenses."
+msgstr "Honorarios médicos, dentales y gastos hospitalarios."
+
+#. module: bck_pos_multi_order_invoice
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.cnd_pos_order_multi_invoce_filter_view
+msgid "Not Invoiced"
+msgstr "No Facturado"
+
+#. module: bck_pos_multi_order_invoice
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.cnd_pos_order_multi_invoce_account_move_filter_view
+msgid "Not is Multi POS Order Invoice"
+msgstr "No es Factura Global"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__i02
+msgid "Office furniture and equipment investment"
+msgstr "Mobilario y equipo de oficina por inversiones"
+
+#. module: bck_pos_multi_order_invoice
+#: model:res.groups,comment:bck_pos_multi_order_invoice.group_pos_global_invoice
+msgid "Only this group can create global invoices in POS"
+msgstr "Solamente este grupo puede crear Facturas Globales en PdV"
+
+#. module: bck_pos_multi_order_invoice
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.cnd_pos_order_multi_invoce_filter_view
+msgid "Opened Session"
+msgstr "Sesión Abierta"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__i08
+msgid "Other machinery and equipment"
+msgstr "Otra maquinaria y equipo"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.actions.act_window,name:bck_pos_multi_order_invoice.wizard_mass_invoice_pos_order_action
+#: model:ir.ui.menu,name:bck_pos_multi_order_invoice.menu_wizard_mass_invoice_pos_order
+msgid "POS Invoice"
+msgstr "Factura de PdV"
+
+#. module: bck_pos_multi_order_invoice
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.res_pos_invoice_types
+msgid "POS Multi Order Invoice"
+msgstr "Factura Global de PdV"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__pos_order_ids
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.cnd_pos_order_multi_invoce_filter_view
+msgid "POS Orders"
+msgstr "Pedidos de PdV"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_pos_payment_method__l10n_mx_edi_payment_method_id
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__l10n_mx_edi_payment_method_id
+msgid "Payment Way"
+msgstr "Forma de Pago"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__d10
+msgid "Payments for educational services (Colegiatura)"
+msgstr "Pagos por servicios educativos (colegiaturas)"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model,name:bck_pos_multi_order_invoice.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Pedidos del PdV"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model,name:bck_pos_multi_order_invoice.model_pos_payment_method
+msgid "Point of Sale Payment Methods"
+msgstr "Métodos de pago de Punto de venta "
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model,name:bck_pos_multi_order_invoice.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__d05
+msgid "Real interest effectively paid for mortgage loans (room house)"
+msgstr ""
+"Intereses reales efectivamente pagados por créditos hipotecarios (casa "
+"habitación)"
+
+#. module: bck_pos_multi_order_invoice
+#: model_terms:ir.ui.view,arch_db:bck_pos_multi_order_invoice.cnd_pos_order_multi_invoce_filter_view
+msgid "Refunds"
+msgstr "Reembolsos"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__g02
+msgid "Returns, discounts or bonuses"
+msgstr "Devoluciones, descuentos o bonificaciones"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__i07
+msgid "Satellite communications"
+msgstr "Comunicaciones satelitales"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_res_company__pos_invoice_type
+msgid ""
+"Select \"Mass\" for create one invoice of several POS orders, select "
+"\"Single\" for create one invoice for each POS order."
+msgstr ""
+"Seleccione \"Masiva\" para crear una factura de varios pedidos de PdV, "
+"seleccione \"Única\" para crear una factura para cada pedido de PdV."
+
+#. module: bck_pos_multi_order_invoice
+#: model:product.product,name:bck_pos_multi_order_invoice.product_product_sell
+#: model:product.template,name:bck_pos_multi_order_invoice.product_product_sell_product_template
+msgid "Sell"
+msgstr "Venta"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_pos_order__session_state
+msgid "Session Status"
+msgstr "Estado de Sesión"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_account_bank_statement_line__l10n_mx_edi_payment_sign_required
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_account_move__l10n_mx_edi_payment_sign_required
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_account_payment__l10n_mx_edi_payment_sign_required
+msgid "Sign CFDI Payment?"
+msgstr "¿Timbrar Pago CFDI?"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_account_bank_statement_line__l10n_mx_edi_sign_required
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_account_move__l10n_mx_edi_sign_required
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_account_payment__l10n_mx_edi_sign_required
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_res_partner__l10n_mx_edi_sign_required
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_res_users__l10n_mx_edi_sign_required
+msgid "Sign CFDI?"
+msgstr "¿Timbrar Factura?"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__res_company__pos_invoice_type__single
+msgid "Single"
+msgstr "Única"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__i06
+msgid "Telephone communications"
+msgstr "Comunicaciones telefónicas"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__p01
+msgid "To define"
+msgstr "Por definir"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__amount_total
+msgid "Total"
+msgstr ""
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__i03
+msgid "Transportation equipment"
+msgstr "Equipo de transporte"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,field_description:bck_pos_multi_order_invoice.field_wizard_mass_invoice__l10n_mx_edi_usage
+msgid "Usage"
+msgstr "Uso"
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields,help:bck_pos_multi_order_invoice.field_wizard_mass_invoice__l10n_mx_edi_usage
+msgid ""
+"Used in CFDI 3.3 to express the key to the usage that will gives the receiver to this invoice. This value is defined by the customer. \n"
+"Note: It is not cause for cancellation if the key set is not the usage that will give the receiver of the document."
+msgstr ""
+"Usado en CFDI 3.3 para expresar la clave del uso que le dará el receptor a esta factura. Este valor lo define el cliente. \n"
+"Nota: No es motivo de cancelación si el conjunto de claves no es el uso que le dará al receptor del documento."
+
+#. module: bck_pos_multi_order_invoice
+#: model:ir.model.fields.selection,name:bck_pos_multi_order_invoice.selection__wizard_mass_invoice__l10n_mx_edi_usage__d06
+msgid "Voluntary contributions to SAR"
+msgstr "Aportaciones voluntarias al SAR"
