@@ -1,5 +1,3 @@
-# © 2019 Solvos Consultoría Informática (<http://www.solvos.es>)
-# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
     "name": "Ocultar Elementos Pos",
