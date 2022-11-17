@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <data>
+
+        <record id="pos_session_inherit_view" model="ir.ui.view">
+            <field name="name">pos.session.inherit.view</field>
+            <field name="model">pos.session</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_session_form"/>
+            <field name="arch" type="xml">
+                <button name='action_pos_session_closing_control' position="after">
+                    <button name="action_close_session_background" type="object" string="Cerrar sesion programada"
+                            attrs="{'invisible' : ['|',('state', '!=', 'opened'),('is_close_session_background', '=', True)]}"
+                            class="oe_highlight"/>
+                    <button name="action_stop_session_background" type="object" string="Detener Sesion en background"
+                            attrs="{'invisible' : ['|',('state', '!=', 'opened'),('is_close_session_background', '=', False)]}"
+                            class="oe_highlight"/>
+                </button>
+                <field name="start_at" position="after">
+                    <field name="is_close_session_background"/>
+                </field>
+            </field>
+        </record>
+
+        <menuitem id="pos_session_close_menu" name="Programa cierre de sesiones" parent="point_of_sale.menu_point_config_product"
+                  sequence="0" action="action_wizard_all_session_close" groups="point_of_sale.group_pos_manager"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+
+        <record model="ir.cron" id="close_session_schedular">
+            <field name="name">PoS: Close Session</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+            <field name="model_id" ref="model_pos_session"/>
+            <field name="state">code</field>
+            <field name="code">model.inform_close_session()</field>
+        </record>
+
+    </data>
+</odoo>
