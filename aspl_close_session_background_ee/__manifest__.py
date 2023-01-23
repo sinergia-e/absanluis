@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 {
     'name': 'Cierra Sesiones',
     'category': 'Point of Sale',
