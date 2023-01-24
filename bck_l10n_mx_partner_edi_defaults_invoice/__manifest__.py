@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 {
+    
     'name': 'Uso y Forma de Pago por defecto (Localización Mexicana)',
 
     'summary': """
