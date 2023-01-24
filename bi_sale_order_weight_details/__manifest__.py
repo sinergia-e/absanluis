@@ -2,6 +2,7 @@
 # Part of BrowseInfo. See LICENSE file for full copyright and licensing details.
 
 {
+    
     'name': 'Peso y Volumen en las ordenes',
     'version': '15.0.0.0',
     'category': 'Sales',
