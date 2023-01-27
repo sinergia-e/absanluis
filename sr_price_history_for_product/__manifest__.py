@@ -4,6 +4,7 @@
 ##############################################################################
 
 {
+    
     'name': "Historico de precios venta/compra San Luis",
     'version': "15.0.0.0",
     'summary': "Historico de precios de venta y compra san luis.",
