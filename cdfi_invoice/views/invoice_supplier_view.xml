@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<!--
+	
     <record id="view_invoice_inherit_tree" model="ir.ui.view">
         <field name="name">account.move.inherit.tree</field>
         <field name="model">account.move</field>
@@ -10,7 +10,7 @@
             	<field name="estado_factura" string="Estado CFDI"/>
             </field>    
         </field>
-    </record> -->
+    </record>
 
     <record id="invoice_supplier_form" model="ir.ui.view">
             <field name="name">account.move.supplier.form</field>
@@ -40,7 +40,7 @@
                 </xpath>
                 <field name="ref" position="after">
                 	<field name="factura_cfdi" invisible="1"/>
-                </field>     <!--   
+                </field>        
                 <button name="action_invoice_sent" position="replace">
                 	<button name="action_invoice_sent" type="object" string="Enviar por correo electrónico" attrs="{'invisible':[('state', '=', 'draft')]}" groups="base.group_user"/>
                 </button>     
@@ -49,7 +49,7 @@
                 			attrs="{'invisible':['|',('factura_cfdi','=',True), ('state','not in',('open', 'paid'))]}"
                 			class="oe_highlight" groups="base.group_user"/>
                 	<button name="action_cfdi_cancel" type="object" string="Cancelar CFDI" attrs="{'invisible':['|',('factura_cfdi','=',False), ('estado_factura','=','factura_cancelada')]}" class="oe_highlight" groups="base.group_user"/>
-                </button> -->
+                </button>
             </field>
         </record>
 </odoo>
